@@ -1,7 +1,5 @@
 const plugin = require('tailwindcss/plugin');
 
-// test
-
 module.exports = plugin(function ({ addUtilities }) {
     const newUtilities = {
         '.text-shadow': {
