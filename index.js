@@ -11,6 +11,9 @@ module.exports = plugin(function ({ addUtilities }) {
         '.text-shadow-lg': {
             'text-shadow': '6px 6px 8px rgba(0, 0, 0, 0.8)',
         },
+        '.test': {
+            'color': '#AD452F',
+        },
     };
 
     addUtilities(newUtilities);
