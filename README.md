@@ -1,8 +1,8 @@
-# Tailwind Plugin Example
+# Tailsnap
 
-This is a Tailwind CSS plugin that adds text shadow utilities.
+Supercharge your Tailwind workflow.
 
 ## Installation
 
 ```bash
-npm install tailwind-plugin-example
+npm install tailsnap
