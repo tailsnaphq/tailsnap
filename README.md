@@ -6,11 +6,3 @@ Supercharge your Tailwind workflow.
 
 ```bash
 npm install tailsnap
-
-```javascript
-module.exports = {
-  // other configurations...
-  plugins: [
-    require('tailwind-plugin-example'),
-  ],
-};
