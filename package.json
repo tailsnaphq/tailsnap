@@ -14,7 +14,7 @@
     "tailwind"
   ],
   "author": "Tailsnap",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tailsnaphq/tailsnap/issues"
   },
