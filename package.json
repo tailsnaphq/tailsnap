@@ -1,0 +1,25 @@
+{
+  "name": "tailsnap",
+  "version": "1.0.0",
+  "description": "Supercharge your Tailwind workflow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailsnaphq/tailsnap.git"
+  },
+  "keywords": [
+    "tailwind"
+  ],
+  "author": "Tailsnap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tailsnaphq/tailsnap/issues"
+  },
+  "homepage": "https://github.com/tailsnaphq/tailsnap#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
