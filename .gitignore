@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Local test project directory
+test-project/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# Ignore OS-specific files (macOS)
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore dependency directories and build outputs
+/dist/
+/build/
+/coverage/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Package lock
+package-lock.json
