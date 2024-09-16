@@ -24,6 +24,3 @@ test-project/
 # Ignore temporary files
 *.tmp
 *.swp
-
-# Package lock
-package-lock.json
