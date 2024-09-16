@@ -4,7 +4,7 @@ module.exports = plugin(function ({ addComponents }) {
     const newComponents = {
         // Buttons
         '.btn': {
-            '@apply p-2 bg-black text-white rounded-md': {},
+            '@apply p-2 bg-black text-white rounded-md w-fit': {},
         },
     };
 
