@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = plugin(function ({ addUtilities }) {
     const newUtilities = {
-        // Buttons ----------------------------------
+        // Buttons ---------------------------------
         '.btn': {
             'padding': '0.5rem',
             'background-color': '#000000',
