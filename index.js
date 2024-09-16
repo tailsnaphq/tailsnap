@@ -8,7 +8,6 @@ module.exports = plugin(function ({ addUtilities }) {
             'background-color': '#000000',
             'color': '#ffffff',
             'width': 'fit-content',
-            'border-radius': '0.375rem',
         },
     };
 
