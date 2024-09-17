@@ -78,7 +78,34 @@ module.exports = plugin(function ({ addComponents }) {
 
         // INPUTS ---------------------------------------------------------------------------------------------------------
 
-
+        // Text Input with Button on the Right
+        '.input-with-button': {
+            '@apply flex items-center justify-between w-fit border-[2.5px] border-[#111005]': {}, // Container styles
+            'position': 'relative',
+            'height': '3rem',
+        },
+        '.input-with-button input': {
+            '@apply flex-grow h-full px-4': {}, // Input styles
+            'border': 'none',
+            'outline': 'none',
+            // 'background': 'transparent',
+        },
+        '.input-with-button button': {
+            '@apply flex items-center justify-center h-full px-4': {}, // Button styles
+            'border-left': '2.5px solid black', // Adding border to the left side of the button
+            'min-width': '3rem',
+            'cursor': 'pointer',
+            'padding': '0', // Remove padding to make the icon fill the button
+        },
+        '.input-with-button button::before': {
+            'content': '""',
+            'display': 'inline-block',
+            'background-color': 'currentColor', // Use current color for the icon
+            'width': '1.5rem',
+            'height': '1.5rem',
+            'mask': 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-arrow-right\'%3E%3Cline x1=\'5\' y1=\'12\' x2=\'19\' y2=\'12\'%3E%3C/line%3E%3Cpolyline points=\'12 5 19 12 12 19\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center', // SVG Arrow Icon
+            'mask-size': 'contain',
+        },
     };
 
     addComponents(newComponents);
