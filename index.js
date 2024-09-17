@@ -92,7 +92,7 @@ module.exports = plugin(function ({ addComponents }) {
         },
         '.input-with-button button': {
             '@apply flex items-center justify-center h-full px-4': {}, // Button styles
-            'border-left': '2.5px solid black', // Adding border to the left side of the button
+            'border-left': '2.5px solid #111005', // Adding border to the left side of the button
             'min-width': '3rem',
             'cursor': 'pointer',
             'padding': '0', // Remove padding to make the icon fill the button
