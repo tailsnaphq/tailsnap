@@ -83,7 +83,7 @@ module.exports = plugin(function ({ addComponents }) {
             '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative': {}, // Container styles
         },
         '.input-neo-brut input': {
-            '@apply flex-grow px-4 border-none outline-none': {}, // Input styles
+            '@apply flex-grow px-4 outline-none': {}, // Input styles
         },
         '.input-neo-brut button': {
             '@apply flex items-center justify-center p-2 border-l-[2.5px] border-[#111005] cursor-pointer': {}, // Button styles
