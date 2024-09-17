@@ -78,20 +78,20 @@ module.exports = plugin(function ({ addComponents }) {
 
         // INPUTS ---------------------------------------------------------------------------------------------------------
 
-        // input-neo-brut
-        '.input-neo-brut': {
+        // input-neo-brutalism
+        '.input-neo-brutalism': {
             '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative': {}, // Container styles
         },
-        '.input-neo-brut input': {
-            '@apply flex-grow px-4 outline-none': {}, // Input styles
+        '.input-neo-brutalism input': {
+            '@apply flex-grow outline-none': {}, // Input styles
         },
-        '.input-neo-brut button': {
-            '@apply flex items-center justify-center p-2 border-l-[2.5px] border-[#111005] cursor-pointer': {}, // Button styles
+        '.input-neo-brutalism button': {
+            '@apply flex items-center justify-center border-l-[2.5px] border-[#111005] cursor-pointer': {}, // Button styles
         },
-        '.input-neo-brut button::before': {
-            '@apply inline-block bg-current w-6 h-6': {}, // Applying utility classes for ::before pseudo-element
+        '.input-neo-brutalism button::before': {
+            '@apply inline-block bg-current': {}, // Applying utility classes for ::before pseudo-element
             'content': '""',
-            'mask': 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-arrow-right\'%3E%3Cline x1=\'5\' y1=\'12\' x2=\'19\' y2=\'12\'%3E%3C/line%3E%3Cpolyline points=\'12 5 19 12 12 19\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center', // SVG Arrow Icon
+            'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'1\'><path d=\'M12 2.1216C12 3.1659 13.0349 4.7286 14.0811 6.041C15.4283 7.7307 17.0361 9.2068 18.881 10.3338C20.2631 11.1777 21.9414 11.9878 23.2896 11.9878M12 21.8784C12 20.8341 13.0349 19.2714 14.0811 17.959C15.4283 16.2694 17.0361 14.7932 18.881 13.6662C20.2631 12.8223 21.9414 12.0122 23.2896 12.0122M23.2896 12H0.7104\'/></svg>") no-repeat center',
             'mask-size': 'contain',
         },
     };
