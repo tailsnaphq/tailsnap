@@ -78,26 +78,22 @@ module.exports = plugin(function ({ addComponents }) {
 
         // INPUTS ---------------------------------------------------------------------------------------------------------
 
-        // Text Input with Button on the Right
-        '.input-with-button': {
-            '@apply flex items-center justify-between w-fit border-[2.5px] border-[#111005]': {}, // Container styles
+        // input-neo-brut
+        '.input-neo-brut': {
+            '@apply flex justify-between w-fit border-[2.5px] border-[#111005]': {}, // Container styles
             'position': 'relative',
-            'height': '3rem',
         },
-        '.input-with-button input': {
-            '@apply flex-grow h-full px-4': {}, // Input styles
+        '.input-neo-brut input': {
+            '@apply flex-grow px-4': {}, // Input styles
             'border': 'none',
             'outline': 'none',
-            // 'background': 'transparent',
         },
-        '.input-with-button button': {
-            '@apply flex items-center justify-center h-full px-4': {}, // Button styles
+        '.input-neo-brut button': {
+            '@apply flex items-center justify-center p-2': {}, // Button styles
             'border-left': '2.5px solid #111005', // Adding border to the left side of the button
-            'min-width': '3rem',
             'cursor': 'pointer',
-            'padding': '0', // Remove padding to make the icon fill the button
         },
-        '.input-with-button button::before': {
+        '.input-neo-brut button::before': {
             'content': '""',
             'display': 'inline-block',
             'background-color': 'currentColor', // Use current color for the icon
