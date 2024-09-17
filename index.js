@@ -58,7 +58,7 @@ module.exports = plugin(function ({ addComponents }) {
         //     },
         // },
 
-        // btn-arrow (SOL - DEFAULTS)
+        // btn-arrow (SOL - DEFAULT COLORS)
         '.btn-arrow': {
             '@apply flex items-center gap-2 p-2 rounded-lg w-fit': {}, // Base styles
             'background-color': '#111005', // Default button background color
