@@ -80,25 +80,17 @@ module.exports = plugin(function ({ addComponents }) {
 
         // input-neo-brut
         '.input-neo-brut': {
-            '@apply flex justify-between w-fit border-[2.5px] border-[#111005]': {}, // Container styles
-            'position': 'relative',
+            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative': {}, // Container styles
         },
         '.input-neo-brut input': {
-            '@apply flex-grow px-4': {}, // Input styles
-            'border': 'none',
-            'outline': 'none',
+            '@apply flex-grow px-4 border-none outline-none': {}, // Input styles
         },
         '.input-neo-brut button': {
-            '@apply flex items-center justify-center p-2': {}, // Button styles
-            'border-left': '2.5px solid #111005', // Adding border to the left side of the button
-            'cursor': 'pointer',
+            '@apply flex items-center justify-center p-2 border-l-[2.5px] border-[#111005] cursor-pointer': {}, // Button styles
         },
         '.input-neo-brut button::before': {
+            '@apply inline-block bg-current w-6 h-6': {}, // Applying utility classes for ::before pseudo-element
             'content': '""',
-            'display': 'inline-block',
-            'background-color': 'currentColor', // Use current color for the icon
-            'width': '1.5rem',
-            'height': '1.5rem',
             'mask': 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-arrow-right\'%3E%3Cline x1=\'5\' y1=\'12\' x2=\'19\' y2=\'12\'%3E%3C/line%3E%3Cpolyline points=\'12 5 19 12 12 19\'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center', // SVG Arrow Icon
             'mask-size': 'contain',
         },
