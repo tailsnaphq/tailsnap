@@ -14,12 +14,12 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-basic
         '.btn-basic': {
-            '@apply px-2.5 py-1.5 rounded-lg w-fit border-2 border-[#111005] bg-[#111005] text-[#FFFFFF]': {},
+            '@apply p-3 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF]': {},
         },
 
         // btn-basic-outline
         '.btn-basic-outline': {
-            '@apply px-2.5 py-1.5 rounded-lg w-fit border-2 border-[#111005]': {},
+            '@apply p-3 rounded-lg w-fit border-[2.5px] border-[#111005]': {},
         },
 
         // btn-arrow
@@ -60,19 +60,12 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-arrow (SOL - DEFAULT COLORS - BEFORE: NAMING)
         '.btn-arrow': {
-            '@apply flex items-center gap-2 p-2 rounded-lg w-fit': {}, // Base styles
-            'background-color': '#111005', // Default button background color
-            'color': '#FFFFFF', // Default text color
-            'position': 'relative', // Necessary for ::before positioning
+            '@apply flex items-center gap-2 relative p-2 rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {}, // Base styles
             '&::before': {
+                '@apply rounded bg-current inline-block w-6 h-6': {}, // Default to use text color or inherited color
                 'content': '""',
-                'display': 'inline-block',
-                '@apply rounded bg-current': {}, // Default to use text color or inherited color
-                'width': '24px',
-                'height': '24px',
-                'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'24\' height=\'24\' viewBox=\'0 0 24 24\' fill=\'currentColor\' class=\'icon icon-tabler icons-tabler-filled icon-tabler-square-arrow-right\'><path stroke=\'none\' d=\'M0 0h24v24H0z\' fill=\'none\'/><path d=\'M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-6.387 5.21a1 1 0 0 0 -1.32 .083l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293h-5.585l-.117 .007a1 1 0 0 0 .117 1.993h5.585l-2.292 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.074 -.104l.052 -.098l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z\' /></svg>") no-repeat center',
+                'mask': 'url("data:image/svg+xml,<svg viewBox=\'0 0 24 24\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\' id=\'Arrow-Up-Right-Square--Streamline-Iconoir\'><desc>Arrow Up Right Square Streamline Icon: https://streamlinehq.com</desc><path fill-rule=\'evenodd\' clip-rule=\'evenodd\' d=\'M1.8683 0.24C0.969 0.24 0.24 0.969 0.24 1.8683V22.1317C0.24 23.031 0.969 23.76 1.8683 23.76H22.1317C23.031 23.76 23.76 23.031 23.76 22.1317V1.8683C23.76 0.969 23.031 0.24 22.1317 0.24H1.8683ZM9.4416 7.6837H15.4117C15.6433 7.6837 15.8748 7.772 16.0513 7.9486C16.1382 8.0353 16.2036 8.1353 16.2477 8.242C16.292 8.3487 16.3163 8.4656 16.3163 8.5883V14.5585C16.3163 15.0581 15.9113 15.4631 15.4117 15.4631S14.5071 15.0581 14.5071 14.5585V10.7721L9.2283 16.051C8.8751 16.4043 8.3023 16.4043 7.949 16.051C7.5957 15.6977 7.5957 15.1249 7.949 14.7716L13.2279 9.4929H9.4416C8.942 9.4929 8.5369 9.0879 8.5369 8.5883C8.5369 8.0886 8.9419 7.6836 9.4416 7.6836Z\' fill=\'currentColor\' stroke-width=\'1\'></path></svg>") no-repeat center',
                 'mask-size': 'contain',
-                'background-color': '#FFFFFF', // Default icon color
             },
         },
 
@@ -96,7 +89,7 @@ module.exports = plugin(function ({ addComponents }) {
         '.input-neo-submit button::before': {
             '@apply inline-block bg-current': {}, // Applying utility classes for ::before pseudo-element
             'content': '""',
-            'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'2\'><path d=\'M12 2.1216C12 3.1659 13.0349 4.7286 14.0811 6.041C15.4283 7.7307 17.0361 9.2068 18.881 10.3338C20.2631 11.1777 21.9414 11.9878 23.2896 11.9878M12 21.8784C12 20.8341 13.0349 19.2714 14.0811 17.959C15.4283 16.2694 17.0361 14.7932 18.881 13.6662C20.2631 12.8223 21.9414 12.0122 23.2896 12.0122M23.2896 12H0.7104\'/></svg>") no-repeat center',
+            'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'-1 -1 24 24\' id=\'Left-2-Short-Arrow--Streamline-Guidance---Free\'><desc>Left 2 Short Arrow Streamline Icon: https://streamlinehq.com</desc><path stroke=\'currentColor\' d=\'M11 1.9447999999999999C11 2.902075 11.948658333333332 4.33455 12.907675 5.537583333333333C14.142608333333333 7.086474999999999 15.616425 8.439566666666666 17.307583333333334 9.47265C18.574508333333334 10.246224999999999 20.11295 10.988816666666667 21.3488 10.988816666666667M11 20.0552C11 19.097925 11.948658333333332 17.66545 12.907675 16.462416666666666C14.142608333333333 14.913616666666666 15.616425 13.560433333333334 17.307583333333334 12.52735C18.574508333333334 11.753775 20.11295 11.011183333333333 21.3488 11.011183333333333M21.3488 11H0.6512\' stroke-width=\'2\'></path></svg>") no-repeat center',
             'mask-size': 'contain',
         },
     };
