@@ -22,27 +22,32 @@ module.exports = plugin(function ({ addComponents }) {
             '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005]': {},
         },
 
-        // btn-arrow
-        '.btn-arrow': {
-            '@apply flex items-center gap-2 relative p-2 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
-            '&::before': {
-                '@apply rounded bg-current inline-block w-6 h-6': {},
-                'content': '""',
-                'mask': 'url("data:image/svg+xml,<svg viewBox=\'0 0 24 24\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\' id=\'Arrow-Up-Right-Square--Streamline-Iconoir\'><desc>Arrow Up Right Square Streamline Icon: https://streamlinehq.com</desc><path fill-rule=\'evenodd\' clip-rule=\'evenodd\' d=\'M1.8683 0.24C0.969 0.24 0.24 0.969 0.24 1.8683V22.1317C0.24 23.031 0.969 23.76 1.8683 23.76H22.1317C23.031 23.76 23.76 23.031 23.76 22.1317V1.8683C23.76 0.969 23.031 0.24 22.1317 0.24H1.8683ZM9.4416 7.6837H15.4117C15.6433 7.6837 15.8748 7.772 16.0513 7.9486C16.1382 8.0353 16.2036 8.1353 16.2477 8.242C16.292 8.3487 16.3163 8.4656 16.3163 8.5883V14.5585C16.3163 15.0581 15.9113 15.4631 15.4117 15.4631S14.5071 15.0581 14.5071 14.5585V10.7721L9.2283 16.051C8.8751 16.4043 8.3023 16.4043 7.949 16.051C7.5957 15.6977 7.5957 15.1249 7.949 14.7716L13.2279 9.4929H9.4416C8.942 9.4929 8.5369 9.0879 8.5369 8.5883C8.5369 8.0886 8.9419 7.6836 9.4416 7.6836Z\' fill=\'currentColor\' stroke-width=\'1\'></path></svg>") no-repeat center',
-                'mask-size': 'contain',
-            },
+        // btn-neo
+        '.btn-neo': {
+            '@apply p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
+
+        // btn-arrow
+        // '.btn-arrow': {
+        //     '@apply flex items-center gap-2 relative p-2.5 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
+        //     '&::before': {
+        //         '@apply rounded bg-current inline-block w-6 h-6': {},
+        //         'content': '""',
+        //         'mask': 'url("data:image/svg+xml,<svg viewBox=\'0 0 24 24\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\' id=\'Arrow-Up-Right-Square--Streamline-Iconoir\'><desc>Arrow Up Right Square Streamline Icon: https://streamlinehq.com</desc><path fill-rule=\'evenodd\' clip-rule=\'evenodd\' d=\'M1.8683 0.24C0.969 0.24 0.24 0.969 0.24 1.8683V22.1317C0.24 23.031 0.969 23.76 1.8683 23.76H22.1317C23.031 23.76 23.76 23.031 23.76 22.1317V1.8683C23.76 0.969 23.031 0.24 22.1317 0.24H1.8683ZM9.4416 7.6837H15.4117C15.6433 7.6837 15.8748 7.772 16.0513 7.9486C16.1382 8.0353 16.2036 8.1353 16.2477 8.242C16.292 8.3487 16.3163 8.4656 16.3163 8.5883V14.5585C16.3163 15.0581 15.9113 15.4631 15.4117 15.4631S14.5071 15.0581 14.5071 14.5585V10.7721L9.2283 16.051C8.8751 16.4043 8.3023 16.4043 7.949 16.051C7.5957 15.6977 7.5957 15.1249 7.949 14.7716L13.2279 9.4929H9.4416C8.942 9.4929 8.5369 9.0879 8.5369 8.5883C8.5369 8.0886 8.9419 7.6836 9.4416 7.6836Z\' fill=\'currentColor\' stroke-width=\'1\'></path></svg>") no-repeat center',
+        //         'mask-size': 'contain',
+        //     },
+        // },
 
         // INPUTS ---------------------------------------------------------------------------------------------------------
 
         // input-neo
         '.input-neo': {
-            '@apply flex w-fit border-[2.5px] border-[#111005] p-2.5 outline-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {},
+            '@apply flex w-fit border-[2.5px] border-[#111005] p-2.5 outline-none shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
 
         // input-neo-submit
         '.input-neo-submit': {
-            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {},
+            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
         '.input-neo-submit input': {
             '@apply flex-grow outline-none': {},
