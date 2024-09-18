@@ -27,6 +27,11 @@ module.exports = plugin(function ({ addComponents }) {
             '@apply p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
 
+        // btn-glow
+        '.btn-glow': {
+            '@apply text-white bg-[#111005] border-[2.5px] border-[#111005] p-2.5 rounded-lg transition-transform ease-in-out hover:scale-105 w-fit shadow-[0_2px_15px_rgba(255,255,0,0.5),_0_4px_30px_rgba(255,0,255,0.5)]': {},
+        },
+
         // btn-arrow
         // '.btn-arrow': {
         //     '@apply flex items-center gap-2 relative p-2.5 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
