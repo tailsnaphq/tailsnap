@@ -14,17 +14,17 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-basic
         '.btn-basic': {
-            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF]': {},
+            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF] transition-transform ease-in-out hover:scale-105': {},
         },
 
         // btn-basic-outline
         '.btn-basic-outline': {
-            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005]': {},
+            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] transition-transform ease-in-out hover:scale-105': {},
         },
 
         // btn-neo
         '.btn-neo': {
-            '@apply p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
+            '@apply p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)] transition-transform ease-in-out hover:scale-105': {},
         },
 
         // btn-glow
