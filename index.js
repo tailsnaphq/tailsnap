@@ -14,17 +14,17 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-basic
         '.btn-basic': {
-            '@apply p-3 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF]': {},
+            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF]': {},
         },
 
         // btn-basic-outline
         '.btn-basic-outline': {
-            '@apply p-3 rounded-lg w-fit border-[2.5px] border-[#111005]': {},
+            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005]': {},
         },
 
         // btn-arrow
         '.btn-arrow': {
-            '@apply flex items-center gap-2 relative p-3 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
+            '@apply flex items-center gap-2 relative p-2 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
             '&::before': {
                 '@apply rounded bg-current inline-block w-6 h-6': {},
                 'content': '""',
@@ -37,7 +37,7 @@ module.exports = plugin(function ({ addComponents }) {
 
         // input-neo
         '.input-neo': {
-            '@apply flex w-fit border-[2.5px] border-[#111005] p-3 outline-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {},
+            '@apply flex w-fit border-[2.5px] border-[#111005] p-2.5 outline-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {},
         },
 
         // input-neo-submit
