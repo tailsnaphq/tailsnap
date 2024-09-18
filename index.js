@@ -14,22 +14,22 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-basic
         '.btn-basic': {
-            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF] hover:scale-[1.01] hover:opacity-95': {},
+            '@apply font-medium p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] bg-[#111005] text-[#FFFFFF] hover:scale-[1.01] hover:opacity-95': {},
         },
 
         // btn-basic-outline
         '.btn-basic-outline': {
-            '@apply p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] hover:scale-[1.01] hover:bg-[#FAFAFA]': {},
+            '@apply font-medium p-2.5 rounded-lg w-fit border-[2.5px] border-[#111005] hover:scale-[1.01] hover:bg-[#FAFAFA]': {},
         },
 
         // btn-neo
         '.btn-neo': {
-            '@apply p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)] hover:scale-[1.01] hover:bg-[#FEA6F6] hover:text-white': {},
+            '@apply font-medium p-2.5 w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)] hover:scale-[1.01] hover:bg-[#FEA6F6] hover:text-white': {},
         },
 
         // btn-glow
         '.btn-glow': {
-            '@apply text-white bg-[#111005] border-[2.5px] border-[#111005] p-2.5 rounded-lg hover:scale-[1.01] hover:opacity-95 w-fit shadow-[0_2px_15px_rgba(255,255,0,0.5),_0_4px_30px_rgba(255,0,255,0.5)]': {},
+            '@apply font-medium text-white bg-[#111005] border-[2.5px] border-[#111005] p-2.5 rounded-lg hover:scale-[1.01] hover:opacity-95 w-fit shadow-[0_2px_15px_rgba(255,255,0,0.5),_0_4px_30px_rgba(255,0,255,0.5)]': {},
         },
 
         // btn-arrow
