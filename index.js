@@ -78,20 +78,25 @@ module.exports = plugin(function ({ addComponents }) {
 
         // INPUTS ---------------------------------------------------------------------------------------------------------
 
-        // input-neo-brutalism
-        '.input-neo-brutalism': {
-            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative': {}, // Container styles
+        // input-neo
+        '.input-neo': {
+            '@apply flex w-fit border-[2.5px] border-[#111005] p-3 outline-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {}, // Container styles
         },
-        '.input-neo-brutalism input': {
+
+        // input-neo-submit
+        '.input-neo-submit': {
+            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]': {}, // Container styles
+        },
+        '.input-neo-submit input': {
             '@apply flex-grow outline-none': {}, // Input styles
         },
-        '.input-neo-brutalism button': {
+        '.input-neo-submit button': {
             '@apply flex items-center justify-center border-l-[2.5px] border-[#111005] cursor-pointer': {}, // Button styles
         },
-        '.input-neo-brutalism button::before': {
+        '.input-neo-submit button::before': {
             '@apply inline-block bg-current': {}, // Applying utility classes for ::before pseudo-element
             'content': '""',
-            'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'1\'><path d=\'M12 2.1216C12 3.1659 13.0349 4.7286 14.0811 6.041C15.4283 7.7307 17.0361 9.2068 18.881 10.3338C20.2631 11.1777 21.9414 11.9878 23.2896 11.9878M12 21.8784C12 20.8341 13.0349 19.2714 14.0811 17.959C15.4283 16.2694 17.0361 14.7932 18.881 13.6662C20.2631 12.8223 21.9414 12.0122 23.2896 12.0122M23.2896 12H0.7104\'/></svg>") no-repeat center',
+            'mask': 'url("data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'2\'><path d=\'M12 2.1216C12 3.1659 13.0349 4.7286 14.0811 6.041C15.4283 7.7307 17.0361 9.2068 18.881 10.3338C20.2631 11.1777 21.9414 11.9878 23.2896 11.9878M12 21.8784C12 20.8341 13.0349 19.2714 14.0811 17.959C15.4283 16.2694 17.0361 14.7932 18.881 13.6662C20.2631 12.8223 21.9414 12.0122 23.2896 12.0122M23.2896 12H0.7104\'/></svg>") no-repeat center',
             'mask-size': 'contain',
         },
     };
