@@ -24,7 +24,7 @@ module.exports = plugin(function ({ addComponents }) {
 
         // btn-arrow
         '.btn-arrow': {
-            '@apply flex items-center gap-2 relative p-2 rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
+            '@apply flex items-center gap-2 relative p-3 border-[2.5px] border-[#111005] rounded-lg w-fit bg-[#111005] text-[#FFFFFF]': {},
             '&::before': {
                 '@apply rounded bg-current inline-block w-6 h-6': {},
                 'content': '""',
