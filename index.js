@@ -68,7 +68,11 @@ module.exports = plugin(function ({ addComponents }) {
         },
 
         // MODALS ---------------------------------------------------------------------------------------------------------
-        
+
+        // modal-basic
+        '.modal-basic': {
+            '@apply p-32 bg-white': {},
+        },
 
     };
 
