@@ -69,6 +69,11 @@ module.exports = plugin(function ({ addComponents }) {
 
         // MODALS ---------------------------------------------------------------------------------------------------------
 
+        // modaldialog
+        '.modaldialog': {
+            '@apply rounded-xl shadow-2xl': {},
+        },
+
         // modal-basic
         '.modal-basic': {
             '@apply p-32 bg-white': {},
