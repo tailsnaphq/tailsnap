@@ -69,14 +69,35 @@ module.exports = plugin(function ({ addComponents }) {
 
         // MODALS ---------------------------------------------------------------------------------------------------------
 
-        // modaldialog
-        '.modaldialog': {
-            '@apply rounded-xl shadow-2xl': {},
+        // Define shared backdrop styles
+        '.modal-backdrop': {
+            '@apply bg-black bg-opacity-40': {}, // Shared backdrop styles for all modals
         },
 
         // modal-basic
         '.modal-basic': {
             '@apply p-32 bg-white': {},
+        },
+
+        // modal-dialog-basic
+        '.modal-dialog-basic': {
+            '@apply rounded-xl shadow-2xl': {},
+            '&::backdrop': {
+                '@apply modal-backdrop': {},
+            },
+        },
+
+        // modal-neo
+        '.modal-neo': {
+            '@apply p-32 bg-white': {},
+        },
+
+        // modal-dialog-neo
+        '.modal-dialog-neo': {
+            '@apply shadow-2xl border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
+            '&::backdrop': {
+                '@apply modal-backdrop': {},
+            },
         },
 
     };
