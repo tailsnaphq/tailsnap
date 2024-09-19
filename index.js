@@ -69,9 +69,9 @@ module.exports = plugin(function ({ addComponents }) {
 
         // MODALS ---------------------------------------------------------------------------------------------------------
 
-        // Define shared backdrop styles
+        // Shared backdrop styles (all modals)
         '.modal-backdrop': {
-            '@apply bg-black bg-opacity-40': {}, // Shared backdrop styles for all modals
+            '@apply bg-black bg-opacity-40': {},
         },
 
         // modal-basic
