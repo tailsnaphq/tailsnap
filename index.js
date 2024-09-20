@@ -47,15 +47,15 @@ module.exports = plugin(function ({ addComponents }) {
 
         // input-neo
         '.input-neo': {
-            '@apply flex w-fit border-[2.5px] border-[#111005] p-2.5 outline-none shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
+            '@apply flex w-fit border-[2.5px] border-[#111005] p-2.5 outline-none bg-transparent shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
 
         // input-neo-submit
         '.input-neo-submit': {
-            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] relative shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
+            '@apply flex justify-between w-fit border-[2.5px] border-[#111005] shadow-[4px_4px_0_0_rgba(17,16,5,1)]': {},
         },
         '.input-neo-submit input': {
-            '@apply flex-grow outline-none': {},
+            '@apply flex-grow outline-none bg-transparent': {},
         },
         '.input-neo-submit button': {
             '@apply flex items-center justify-center border-l-[2.5px] border-[#111005] cursor-pointer': {},
