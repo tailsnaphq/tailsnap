@@ -3,14 +3,14 @@ const plugin = require('tailwindcss/plugin');
 module.exports = plugin(function ({ addComponents }) {
     const newComponents = {
 
-        // LAYOUTS ---------------------------------------------------------------------------------------------------------
+        // Layouts ---------------------------------------------------------------------------------------------------------
 
         // flex-center-all
         '.flex-center-all': {
             '@apply flex items-center justify-center': {},
         },
 
-        // BUTTONS ---------------------------------------------------------------------------------------------------------
+        // Button ---------------------------------------------------------------------------------------------------------
 
         // btn-basic
         '.btn-basic': {
@@ -43,7 +43,7 @@ module.exports = plugin(function ({ addComponents }) {
         //     },
         // },
 
-        // INPUTS ---------------------------------------------------------------------------------------------------------
+        // Text Input ---------------------------------------------------------------------------------------------------------
 
         // input-neo
         '.input-neo': {
@@ -67,7 +67,7 @@ module.exports = plugin(function ({ addComponents }) {
         //     'mask-size': 'contain',
         // },
 
-        // MODALS ---------------------------------------------------------------------------------------------------------
+        // Modal ---------------------------------------------------------------------------------------------------------
 
         // Shared backdrop styles (all modals)
         '.modal-backdrop': {
@@ -98,6 +98,34 @@ module.exports = plugin(function ({ addComponents }) {
             '&::backdrop': {
                 '@apply modal-backdrop': {},
             },
+        },
+
+        // Select ---------------------------------------------------------------------------------------------------------
+
+        // select-profiles
+        '.select-profiles': {
+            '@apply relative w-80 cursor-pointer': {},
+        },
+        '.select-profiles-selected': {
+            '@apply flex items-center gap-2': {},
+        },
+        '.select-profiles-button': {
+            '@apply flex items-center justify-between bg-red-200 p-2.5 border rounded-md w-full': {},
+        },
+        '.select-profiles-arrow': {
+            '@apply bg-blue-200 ml-2 text-gray-500': {},
+        },
+        '.select-profiles-dropdown': {
+            '@apply absolute w-full bg-purple-300 border mt-1 hidden z-10 rounded-md shadow-md': {},
+        },
+        '.select-profiles.open .select-profiles-dropdown': {
+            '@apply block': {},
+        },
+        '.select-profiles-option': {
+            '@apply p-2.5 flex items-center gap-2 hover:bg-gray-100 cursor-pointer': {},
+        },
+        '.select-profiles-avatar': {
+            '@apply w-5 h-5 rounded-full': {},
         },
 
     };
