@@ -110,13 +110,13 @@ module.exports = plugin(function ({ addComponents }) {
             '@apply flex items-center gap-2': {},
         },
         '.select-profiles-button': {
-            '@apply flex items-center justify-between bg-red-200 p-2.5 border rounded-md w-full': {},
+            '@apply flex items-center justify-between bg-transparent p-2.5 border rounded-md w-full': {},
         },
         '.select-profiles-arrow': {
-            '@apply bg-blue-200 ml-2 text-gray-500': {},
+            '@apply ml-2 text-gray-500': {},
         },
         '.select-profiles-dropdown': {
-            '@apply absolute w-full bg-purple-300 border mt-1 hidden z-10 rounded-md shadow-md': {},
+            '@apply absolute w-full bg-transparent border mt-1 hidden z-10 rounded-md shadow-md': {},
         },
         '.select-profiles.open .select-profiles-dropdown': {
             '@apply block': {},
